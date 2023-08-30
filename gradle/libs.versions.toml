@@ -1,0 +1,57 @@
+[versions]
+
+kotlin = "1.9.10"
+ksp = "1.9.10-1.0.13"
+composeCompiler = "1.5.1"
+compose = "1.4.3"
+androidDesugaring = "2.0.3"
+composeActivity = "1.7.2"
+koinCore = "3.4.3"
+koinCompose = "3.4.6"
+koinAndroid = "3.4.3"
+ktor = "2.3.3"
+coroutines = "1.7.3"
+logback = "1.2.11"
+
+[libraries]
+
+classpath-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+#ch-logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback"}
+
+ktor-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation-jvm" }
+ktor-core-jvm = { module = "io.ktor:ktor-server-core-jvm" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json-jvm" }
+ktor-call-logging = { module = "io.ktor:ktor-server-call-logging-jvm" }
+ktor-websockets = { module = "io.ktor:ktor-server-websockets-jvm" }
+ktor-sessions = { module = "io.ktor:ktor-server-sessions-jvm" }
+ktor-netty = { module = "io.ktor:ktor-server-netty-jvm" }
+ktor-test-jvm = { module = "io.ktor:ktor-server-tests-jvm"}
+kotlin-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin"}
+
+[bundles]
+ktor-server = [
+    "ktor-content-negotiation",
+    "ktor-core-jvm",
+    "ktor-serialization",
+    "ktor-call-logging",
+    "ktor-netty",
+    "ktor-sessions",
+    "ktor-websockets"
+]
+
+backend-test = [
+    "ktor-test-jvm",
+    "kotlin-junit"
+]
+
+[plugins]
+
+android = { id = "org.jetbrains.kotlin.android" }
+jvm = { id = "org.jetbrains.kotlin.jvm" }
+androidApp = { id = "com.android.application" }
+androidLib = { id = "com.android.library" }
+kotlinXSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
