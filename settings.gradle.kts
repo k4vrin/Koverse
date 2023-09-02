@@ -19,6 +19,6 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "ktor-chat"
-include(":backend")
+rootProject.name = "Koverse"
+include(":koverse-backend")
 
