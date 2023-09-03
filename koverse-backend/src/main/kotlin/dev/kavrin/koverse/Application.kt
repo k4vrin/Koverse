@@ -1,6 +1,6 @@
-package dev.kavrin
+package dev.kavrin.koverse
 
-import dev.kavrin.plugins.*
+import dev.kavrin.koverse.plugins.*
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {

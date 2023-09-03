@@ -1,6 +1,6 @@
 package dev.kavrin
 
-import dev.kavrin.plugins.*
+import dev.kavrin.koverse.plugins.configureRouting
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*

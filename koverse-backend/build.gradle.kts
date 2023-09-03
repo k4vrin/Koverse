@@ -17,7 +17,14 @@ application {
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 dependencies {
+    implementation(project(":koverse-shared"))
     implementation(libs.bundles.ktor.server)
     implementation(libs.logback)
-    testImplementation(libs.bundles.backend.test)
+
+    implementation(libs.bundles.koin)
+
+    implementation(libs.kmongo)
+    implementation(libs.kmongo.coroutine)
+
+    testImplementation(libs.bundles.backend.test.jvm)
 }

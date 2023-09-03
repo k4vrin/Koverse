@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Koverse"
 include(":koverse-backend")
-
+include("koverse-shared")

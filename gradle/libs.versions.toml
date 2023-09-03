@@ -5,16 +5,21 @@ ksp = "1.9.10-1.0.13"
 composeCompiler = "1.5.1"
 compose = "1.4.3"
 androidDesugaring = "2.0.3"
+androidGradlePlugin = "8.0.2"
 composeActivity = "1.7.2"
-koinCore = "3.4.3"
 koinCompose = "3.4.6"
 koinAndroid = "3.4.3"
 ktor = "2.3.3"
-coroutines = "1.7.3"
 logback = "1.2.11"
+kmongo = "4.10.0"
+koin = "3.4.3"
+kover = "0.6.1"
+kotlinxSerialization = "1.6.0"
+kotlinxCoroutines = "1.7.3"
+
 
 [libraries]
-
+classpath-androidGradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
 classpath-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
@@ -28,7 +33,22 @@ ktor-websockets = { module = "io.ktor:ktor-server-websockets-jvm" }
 ktor-sessions = { module = "io.ktor:ktor-server-sessions-jvm" }
 ktor-netty = { module = "io.ktor:ktor-server-netty-jvm" }
 ktor-test-jvm = { module = "io.ktor:ktor-server-tests-jvm"}
+
 kotlin-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin"}
+
+kmongo = { module = "org.litote.kmongo:kmongo", version.ref = "kmongo" }
+kmongo-coroutine = { module = "org.litote.kmongo:kmongo-coroutine", version.ref = "kmongo" }
+
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin"}
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koin"}
+koin-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koin"}
+
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerialization"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization"}
+
+kotlinx-coroutine-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines"}
+kotlinx-coroutine-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines"}
+kotlinx-coroutine-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutines"}
 
 [bundles]
 ktor-server = [
@@ -41,17 +61,29 @@ ktor-server = [
     "ktor-websockets"
 ]
 
-backend-test = [
+backend-test-jvm = [
     "ktor-test-jvm",
     "kotlin-junit"
 ]
 
+koin = [
+    "koin-core",
+    "koin-ktor",
+    "koin-slf4j"
+]
+
 [plugins]
 
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform" }
 android = { id = "org.jetbrains.kotlin.android" }
-jvm = { id = "org.jetbrains.kotlin.jvm" }
 androidApp = { id = "com.android.application" }
 androidLib = { id = "com.android.library" }
+jvm = { id = "org.jetbrains.kotlin.jvm" }
 kotlinXSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods" }
+buildKonfig = { id = "com.codingfeline.buildkonfig" }
+sqlDelight = { id = "com.squareup.sqldelight" }
+mokoResources = { id = "dev.icerock.mobile.multiplatform-resources" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }

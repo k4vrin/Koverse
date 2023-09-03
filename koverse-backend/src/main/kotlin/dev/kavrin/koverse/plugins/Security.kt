@@ -1,4 +1,4 @@
-package dev.kavrin.plugins
+package dev.kavrin.koverse.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*
