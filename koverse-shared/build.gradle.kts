@@ -2,7 +2,7 @@
 plugins {
     with(libs.plugins) {
         id(multiplatform.get().pluginId)
-        id(androidLib.get().pluginId)
+//        id(androidLib.get().pluginId)
 //        id(cocoapods.get().pluginId)
         alias(kotlinXSerialization)
     }
@@ -13,8 +13,8 @@ version = GeneralConfig.VERSION
 
 
 kotlin {
-    jvmToolchain(17)
-    androidTarget()
+    jvmToolchain(8)
+//    androidTarget()
 //    iosX64()
 //    iosArm64()
 //    iosSimulatorArm64()
@@ -31,18 +31,18 @@ kotlin {
                 implementation(libs.kotlinx.coroutine.core)
             }
         }
-        val commonTest by getting {
-            dependencies {  }
-        }
+//        val commonTest by getting {
+//            dependencies {  }
+//        }
 //        val iosMain by getting {
 //            dependencies {  }
 //        }
 //        val iosTest by getting {
 //            dependencies {  }
 //        }
-        val androidMain by getting {
-            dependencies {  }
-        }
+//        val androidMain by getting {
+//            dependencies {  }
+//        }
 
         val jvmMain by getting {
             dependencies {
@@ -53,7 +53,8 @@ kotlin {
     }
 }
 
-android {
-    namespace = GeneralConfig.PROJECT_ID
-
-}
+//android {
+//    namespace = GeneralConfig.PROJECT_ID
+//    compileSdk = 33
+//
+//}

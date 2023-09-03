@@ -8,7 +8,7 @@ plugins {
 }
 
 group = GeneralConfig.PROJECT_ID
-version = GeneralConfig.VERSION
+version = GeneralConfig.getVersion(AppType.Server)
 
 application {
     mainClass.set("io.ktor.server.netty.EngineMain")
