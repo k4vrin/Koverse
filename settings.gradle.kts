@@ -20,5 +20,6 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "Koverse"
-include(":koverse-backend")
-include("koverse-shared")
+include(":koverseBackend")
+include(":koverseAndroidApp")
+include(":koverseShared")

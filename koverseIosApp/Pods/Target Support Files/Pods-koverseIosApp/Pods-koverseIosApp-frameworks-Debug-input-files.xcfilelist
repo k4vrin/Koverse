@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-koverseIosApp/Pods-koverseIosApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync.framework
+${BUILT_PRODUCTS_DIR}/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine.framework
+${BUILT_PRODUCTS_DIR}/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore.framework
+${PODS_ROOT}/../../koverseShared/build/cocoapods/framework/koverseShared.framework
