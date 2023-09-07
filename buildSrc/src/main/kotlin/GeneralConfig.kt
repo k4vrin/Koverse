@@ -3,7 +3,7 @@ object GeneralConfig {
     const val VERSION = "0.0.1"
     fun getVersion(type: AppType) = when (type) {
         AppType.Server -> "0.1.0"
-        AppType.Android -> TODO()
+        AppType.Android -> "0.1.0"
         AppType.iOS -> TODO()
     }
 }

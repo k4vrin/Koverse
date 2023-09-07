@@ -1,0 +1,7 @@
+target 'koverseIosApp' do
+  use_frameworks!
+  platform :ios, '15'
+  pod 'koverseShared', :path => '../koverseShared'
+  pod 'KMPNativeCoroutinesAsync', '1.0.0-ALPHA-18'    # Swift Concurrency implementation
+  pod 'KMPNativeCoroutinesCombine', '1.0.0-ALPHA-18'  # Combine implementation
+end

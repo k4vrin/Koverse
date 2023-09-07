@@ -1,0 +1,32 @@
+PODS:
+  - KMPNativeCoroutinesAsync (1.0.0-ALPHA-18):
+    - KMPNativeCoroutinesCore (= 1.0.0-ALPHA-18)
+  - KMPNativeCoroutinesCombine (1.0.0-ALPHA-18):
+    - KMPNativeCoroutinesCore (= 1.0.0-ALPHA-18)
+  - KMPNativeCoroutinesCore (1.0.0-ALPHA-18)
+  - koverseShared (1.0)
+
+DEPENDENCIES:
+  - KMPNativeCoroutinesAsync (= 1.0.0-ALPHA-18)
+  - KMPNativeCoroutinesCombine (= 1.0.0-ALPHA-18)
+  - koverseShared (from `../koverseShared`)
+
+SPEC REPOS:
+  trunk:
+    - KMPNativeCoroutinesAsync
+    - KMPNativeCoroutinesCombine
+    - KMPNativeCoroutinesCore
+
+EXTERNAL SOURCES:
+  koverseShared:
+    :path: "../koverseShared"
+
+SPEC CHECKSUMS:
+  KMPNativeCoroutinesAsync: 91d86216afbd78a569c2e6d01c1edf914d344812
+  KMPNativeCoroutinesCombine: 9be43a1d2f429cf82a3a0b3571af79a063ef962e
+  KMPNativeCoroutinesCore: fa73bbfb4f56ef9ff45666646374c43d717110f3
+  koverseShared: cd875fbbdb0b4a595dc9d8303aa96b8f73d205e1
+
+PODFILE CHECKSUM: ccb97776cc105db6be7ceb1efa66c07ab293816f
+
+COCOAPODS: 1.12.1

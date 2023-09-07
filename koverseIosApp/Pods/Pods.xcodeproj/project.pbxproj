@@ -1,0 +1,1171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0F17405B146DB697BAA1AB988A90F9D3 /* koverseShared */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 96C5E5493D7825EDFBF9146852AFA449 /* Build configuration list for PBXAggregateTarget "koverseShared" */;
+			buildPhases = (
+				6CC38755BF9BD948969C1D8E42F42B44 /* [CP-User] Build koverseShared */,
+			);
+			dependencies = (
+			);
+			name = koverseShared;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		025F84299D3169B8586A1024C312A94F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */; };
+		107215B4C6C7B6F0246E96B2F8C8CEDA /* KMPNativeCoroutinesCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 752BB44AB556F0E4734498067083B877 /* KMPNativeCoroutinesCore-dummy.m */; };
+		14FC264160CF6F2CF0A3B4F18E5D95F0 /* KMPNativeCoroutinesCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AF2F156649143C9DD958A23257D3FE /* KMPNativeCoroutinesCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16E27315771AA8ED41FD890D1DC3C579 /* NativeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68029550D17A98784EDB87CA35A2EA /* NativeFlow.swift */; };
+		1A7FDE2889389E8A23717C603A0F3B89 /* AsyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBE2F5C829E2FC7A7D2460B36C379E /* AsyncResult.swift */; };
+		25E5FD55377216C89C88751129556CF1 /* NativeCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DBADD0CE6B9C4EEC467CD6BA4C7B5E /* NativeCancellable.swift */; };
+		310171905D1EEABF1585E37B4AD92886 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7375A81860FC8096B64A8F25B9DAFB77 /* Combine.framework */; };
+		502360EC32D792B1C27BE5E9FE4D700A /* AsyncFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376F8FAC0063170C32B416EEA5461E8 /* AsyncFunction.swift */; };
+		58542EAAE942FBA39067FE59ACF37B21 /* KMPNativeCoroutinesCombine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B28B6F5C9419D5D2587B4F29E1E86A4 /* KMPNativeCoroutinesCombine-dummy.m */; };
+		6ACB2DF78D56F00DFCA0406650C61645 /* Pods-koverseIosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0251501EC7157A03FA3DD684A08B125 /* Pods-koverseIosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BA823BD2FA81A55CA4FDFF286BBEB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */; };
+		8EFC94EF6183DF60457349E8C01A49AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */; };
+		9727FAE66D46E1C0F349D593F4318E4F /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7CDA2CA96EF97EA94FBBCBC2CF6EF7 /* Publisher.swift */; };
+		981211BFE5F9CC695F18BAA98D72F67B /* KMPNativeCoroutinesAsync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF8E4B885D15E5B3B2B23EA4118568 /* KMPNativeCoroutinesAsync-dummy.m */; };
+		A58AC762BBE690566EEDCCD60BF69843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */; };
+		A8601BFDE47F309C7F9349ECB3348806 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437A0F98EE5C39E763BE8C6C0E10480 /* Future.swift */; };
+		AEA61DA3D7731491FBA3025163148764 /* KMPNativeCoroutinesAsync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A90E8CD2C87F51E8F01D945DFA744F1 /* KMPNativeCoroutinesAsync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2582BD70B32BF93D7E40655AE3AA0A7 /* NativeSuspend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE0EA7691D6252A2DF0F817A890DBC /* NativeSuspend.swift */; };
+		B44D284319150453CF94EF541E516EAC /* FuturePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF10AFFEA986E5A9D440CBB8A87B30A /* FuturePublisher.swift */; };
+		B7734C0735648E7C7B8DFE4E4984DBE0 /* Pods-koverseIosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE3190FABE0BDDDCC72EFE5C26A8605 /* Pods-koverseIosApp-dummy.m */; };
+		C0198A745D02F4ADBFEBAE8DAFD63DE6 /* AsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1A730B99A611F9C6CE6D49A5511E4 /* AsyncSequence.swift */; };
+		D5D811285CC80A9518E216C1926B05F6 /* NativeCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7262326A0E3AD95573E63FECBD904E4 /* NativeCallback.swift */; };
+		E4EBA5AD1A1EE63E4BD8DF4C42AEE00D /* KMPNativeCoroutinesCombine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F18C0529C504AD18B2384922631C04 /* KMPNativeCoroutinesCombine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B57ACC342B5BD7BC338C741C23B87B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9FD9D97D14F53EE028871E5A26555A;
+			remoteInfo = KMPNativeCoroutinesCombine;
+		};
+		C53DEB8FFF94069518E4B1494AA0AA4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFB6783B79B68DA14E36A00A348B0B3;
+			remoteInfo = KMPNativeCoroutinesCore;
+		};
+		C73617CAC4694B32208EA96773B247EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91BAFE2F1386309176711630BA5305A;
+			remoteInfo = KMPNativeCoroutinesAsync;
+		};
+		EA1D8199FC5A27E09F2E836E6B611721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFB6783B79B68DA14E36A00A348B0B3;
+			remoteInfo = KMPNativeCoroutinesCore;
+		};
+		EBC797AE932C48C46406EEF3D07098CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F17405B146DB697BAA1AB988A90F9D3;
+			remoteInfo = koverseShared;
+		};
+		F7243E5D9CDC40F27D0882FB42EFCAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFB6783B79B68DA14E36A00A348B0B3;
+			remoteInfo = KMPNativeCoroutinesCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AFE0EA7691D6252A2DF0F817A890DBC /* NativeSuspend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeSuspend.swift; path = KMPNativeCoroutinesCore/NativeSuspend.swift; sourceTree = "<group>"; };
+		1B0D9237621F8B88DE88C650C50F76A4 /* koverseShared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = koverseShared.debug.xcconfig; sourceTree = "<group>"; };
+		1B20864EEF00CFA29D7378B84A2BB667 /* KMPNativeCoroutinesCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPNativeCoroutinesCore-Info.plist"; sourceTree = "<group>"; };
+		1BC4A026DBC6C2982B828355463B2569 /* KMPNativeCoroutinesCombine */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPNativeCoroutinesCombine; path = KMPNativeCoroutinesCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDBDE3F31F17F52BBEE776AC45DE375 /* KMPNativeCoroutinesCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesCore.debug.xcconfig; sourceTree = "<group>"; };
+		20DFA5D2376C9C3ECB8CD385CAB40979 /* Pods-koverseIosApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-koverseIosApp-Info.plist"; sourceTree = "<group>"; };
+		244186CCDDB11E6357E39462FB33501E /* koverseShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = koverseShared.framework; path = build/cocoapods/framework/koverseShared.framework; sourceTree = "<group>"; };
+		24AF2F156649143C9DD958A23257D3FE /* KMPNativeCoroutinesCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesCore-umbrella.h"; sourceTree = "<group>"; };
+		25DBADD0CE6B9C4EEC467CD6BA4C7B5E /* NativeCancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeCancellable.swift; path = KMPNativeCoroutinesCore/NativeCancellable.swift; sourceTree = "<group>"; };
+		31CC32DCD04568AAECA81EAD4661B849 /* KMPNativeCoroutinesAsync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesAsync-prefix.pch"; sourceTree = "<group>"; };
+		3A3BC8D3E092D5D50E27A140418C4BCA /* Pods-koverseIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-koverseIosApp.release.xcconfig"; sourceTree = "<group>"; };
+		470040553DF768BFE02DD4A9E58F2235 /* Pods-koverseIosApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-koverseIosApp"; path = Pods_koverseIosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF10AFFEA986E5A9D440CBB8A87B30A /* FuturePublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FuturePublisher.swift; path = KMPNativeCoroutinesCombine/FuturePublisher.swift; sourceTree = "<group>"; };
+		4BCF8E4B885D15E5B3B2B23EA4118568 /* KMPNativeCoroutinesAsync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPNativeCoroutinesAsync-dummy.m"; sourceTree = "<group>"; };
+		4E68029550D17A98784EDB87CA35A2EA /* NativeFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFlow.swift; path = KMPNativeCoroutinesCore/NativeFlow.swift; sourceTree = "<group>"; };
+		5910A87F7BB454EC38812399A4C20A00 /* KMPNativeCoroutinesCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesCore-prefix.pch"; sourceTree = "<group>"; };
+		5A90E8CD2C87F51E8F01D945DFA744F1 /* KMPNativeCoroutinesAsync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesAsync-umbrella.h"; sourceTree = "<group>"; };
+		5B28B6F5C9419D5D2587B4F29E1E86A4 /* KMPNativeCoroutinesCombine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPNativeCoroutinesCombine-dummy.m"; sourceTree = "<group>"; };
+		62A1A730B99A611F9C6CE6D49A5511E4 /* AsyncSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncSequence.swift; path = KMPNativeCoroutinesAsync/AsyncSequence.swift; sourceTree = "<group>"; };
+		62F43916CA7416F1997D3C53287F2ACF /* KMPNativeCoroutinesCombine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPNativeCoroutinesCombine.modulemap; sourceTree = "<group>"; };
+		684FC77F0B8EAC362857A2BCFB1C31FA /* Pods-koverseIosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-koverseIosApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BE1CCA431B3A3D1F5578AB963AFF258 /* Pods-koverseIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-koverseIosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC46FC24E84E6826FA47DCA426499B5 /* KMPNativeCoroutinesCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesCore.release.xcconfig; sourceTree = "<group>"; };
+		6FCDB7C6C88F89A2E3D050FF00F0DA29 /* KMPNativeCoroutinesAsync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesAsync.release.xcconfig; sourceTree = "<group>"; };
+		7375A81860FC8096B64A8F25B9DAFB77 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Combine.framework; sourceTree = DEVELOPER_DIR; };
+		752BB44AB556F0E4734498067083B877 /* KMPNativeCoroutinesCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPNativeCoroutinesCore-dummy.m"; sourceTree = "<group>"; };
+		756750ECE9CC6E935D261177543ABEE6 /* KMPNativeCoroutinesCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPNativeCoroutinesCore.modulemap; sourceTree = "<group>"; };
+		7BF8C922F7CCF98C0225FFD795F946AE /* Pods-koverseIosApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-koverseIosApp-frameworks.sh"; sourceTree = "<group>"; };
+		7C02E81A16895DE586AD4151F7B18EDA /* KMPNativeCoroutinesCombine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesCombine-prefix.pch"; sourceTree = "<group>"; };
+		7EE2B78A614C6C19416D9665F5344368 /* koverseShared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = koverseShared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEE3190FABE0BDDDCC72EFE5C26A8605 /* Pods-koverseIosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-koverseIosApp-dummy.m"; sourceTree = "<group>"; };
+		B06DF7FC9F71AE2A800FD44A4540429E /* koverseShared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = koverseShared.release.xcconfig; sourceTree = "<group>"; };
+		B0F279A4A63784CCC6ACB11F922B73F0 /* Pods-koverseIosApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-koverseIosApp.modulemap"; sourceTree = "<group>"; };
+		B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B9F18C0529C504AD18B2384922631C04 /* KMPNativeCoroutinesCombine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPNativeCoroutinesCombine-umbrella.h"; sourceTree = "<group>"; };
+		C5BBE2F5C829E2FC7A7D2460B36C379E /* AsyncResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncResult.swift; path = KMPNativeCoroutinesAsync/AsyncResult.swift; sourceTree = "<group>"; };
+		CBB360F2822905300C310CBA06D6A093 /* KMPNativeCoroutinesAsync */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPNativeCoroutinesAsync; path = KMPNativeCoroutinesAsync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2D63D67C9998D95E5838E58C51F5D5 /* KMPNativeCoroutinesCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesCombine.debug.xcconfig; sourceTree = "<group>"; };
+		D0251501EC7157A03FA3DD684A08B125 /* Pods-koverseIosApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-koverseIosApp-umbrella.h"; sourceTree = "<group>"; };
+		D376F8FAC0063170C32B416EEA5461E8 /* AsyncFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncFunction.swift; path = KMPNativeCoroutinesAsync/AsyncFunction.swift; sourceTree = "<group>"; };
+		D613872B081931555D13D5E4957A831C /* KMPNativeCoroutinesCombine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPNativeCoroutinesCombine-Info.plist"; sourceTree = "<group>"; };
+		E32954243B605448566BC0C0B0BCF70D /* KMPNativeCoroutinesCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPNativeCoroutinesCore; path = KMPNativeCoroutinesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E437A0F98EE5C39E763BE8C6C0E10480 /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = KMPNativeCoroutinesCombine/Future.swift; sourceTree = "<group>"; };
+		E7262326A0E3AD95573E63FECBD904E4 /* NativeCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeCallback.swift; path = KMPNativeCoroutinesCore/NativeCallback.swift; sourceTree = "<group>"; };
+		EA7CDA2CA96EF97EA94FBBCBC2CF6EF7 /* Publisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Publisher.swift; path = KMPNativeCoroutinesCombine/Publisher.swift; sourceTree = "<group>"; };
+		EC550D5BDEDF9CC534426654FD82F6C5 /* KMPNativeCoroutinesCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesCombine.release.xcconfig; sourceTree = "<group>"; };
+		F35F1774617CD11EE85EA457CF9B8683 /* KMPNativeCoroutinesAsync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPNativeCoroutinesAsync.modulemap; sourceTree = "<group>"; };
+		F47F77B2F48CAB30549242A066ED2E26 /* Pods-koverseIosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-koverseIosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FBF6889255A593B98A79CBA8F7D6465D /* KMPNativeCoroutinesAsync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPNativeCoroutinesAsync.debug.xcconfig; sourceTree = "<group>"; };
+		FC0411933C0B1B0CB81CBFA9F2BE7201 /* KMPNativeCoroutinesAsync-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPNativeCoroutinesAsync-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		302195670BFCB2B383D3F01C4E68A0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EFC94EF6183DF60457349E8C01A49AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304F365054DB28D79B1FC3C1673A3123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025F84299D3169B8586A1024C312A94F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53B0F7412DE79828E58616E995940FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310171905D1EEABF1585E37B4AD92886 /* Combine.framework in Frameworks */,
+				71BA823BD2FA81A55CA4FDFF286BBEB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CBDDE6791DEA7CF38EE7F6D3D0D84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58AC762BBE690566EEDCCD60BF69843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089BE759B9A03C3A151D3327A2B90DAF /* koverseShared */ = {
+			isa = PBXGroup;
+			children = (
+				DEE744FC83A0B0AA37C575EBF7A40C59 /* Frameworks */,
+				A2D29A72057CE5DFC8E553E2D88C195D /* Pod */,
+				A529B74A50E7812306BFCB1D29043D0B /* Support Files */,
+			);
+			name = koverseShared;
+			path = ../../koverseShared;
+			sourceTree = "<group>";
+		};
+		155E98F56D79DB917AD0600EDBDD8F27 /* KMPNativeCoroutinesAsync */ = {
+			isa = PBXGroup;
+			children = (
+				D376F8FAC0063170C32B416EEA5461E8 /* AsyncFunction.swift */,
+				C5BBE2F5C829E2FC7A7D2460B36C379E /* AsyncResult.swift */,
+				62A1A730B99A611F9C6CE6D49A5511E4 /* AsyncSequence.swift */,
+				16EA6E4EC84ECF6CF8EFC9790E6B9E7E /* Support Files */,
+			);
+			name = KMPNativeCoroutinesAsync;
+			path = KMPNativeCoroutinesAsync;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA581D828EDF08531495EFA1CB2616BC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16EA6E4EC84ECF6CF8EFC9790E6B9E7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F35F1774617CD11EE85EA457CF9B8683 /* KMPNativeCoroutinesAsync.modulemap */,
+				4BCF8E4B885D15E5B3B2B23EA4118568 /* KMPNativeCoroutinesAsync-dummy.m */,
+				FC0411933C0B1B0CB81CBFA9F2BE7201 /* KMPNativeCoroutinesAsync-Info.plist */,
+				31CC32DCD04568AAECA81EAD4661B849 /* KMPNativeCoroutinesAsync-prefix.pch */,
+				5A90E8CD2C87F51E8F01D945DFA744F1 /* KMPNativeCoroutinesAsync-umbrella.h */,
+				FBF6889255A593B98A79CBA8F7D6465D /* KMPNativeCoroutinesAsync.debug.xcconfig */,
+				6FCDB7C6C88F89A2E3D050FF00F0DA29 /* KMPNativeCoroutinesAsync.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KMPNativeCoroutinesAsync";
+			sourceTree = "<group>";
+		};
+		21C3D8EA95EACA61084A85626AF4C19F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7481B021307693FACA6A9F33B1681E73 /* Pods-koverseIosApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		36036B16A72816CDAEBDA32D6C0D631F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB360F2822905300C310CBA06D6A093 /* KMPNativeCoroutinesAsync */,
+				1BC4A026DBC6C2982B828355463B2569 /* KMPNativeCoroutinesCombine */,
+				E32954243B605448566BC0C0B0BCF70D /* KMPNativeCoroutinesCore */,
+				470040553DF768BFE02DD4A9E58F2235 /* Pods-koverseIosApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D37110AE446DFE3358BE4970C623A94 /* KMPNativeCoroutinesCore */ = {
+			isa = PBXGroup;
+			children = (
+				E7262326A0E3AD95573E63FECBD904E4 /* NativeCallback.swift */,
+				25DBADD0CE6B9C4EEC467CD6BA4C7B5E /* NativeCancellable.swift */,
+				4E68029550D17A98784EDB87CA35A2EA /* NativeFlow.swift */,
+				1AFE0EA7691D6252A2DF0F817A890DBC /* NativeSuspend.swift */,
+				FB8A764B4C02D2143E6F368BA1511D67 /* Support Files */,
+			);
+			name = KMPNativeCoroutinesCore;
+			path = KMPNativeCoroutinesCore;
+			sourceTree = "<group>";
+		};
+		67259BDD77EA86CFB823A3525C134493 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				155E98F56D79DB917AD0600EDBDD8F27 /* KMPNativeCoroutinesAsync */,
+				834D386610834B1315B550181BF5802B /* KMPNativeCoroutinesCombine */,
+				3D37110AE446DFE3358BE4970C623A94 /* KMPNativeCoroutinesCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7481B021307693FACA6A9F33B1681E73 /* Pods-koverseIosApp */ = {
+			isa = PBXGroup;
+			children = (
+				B0F279A4A63784CCC6ACB11F922B73F0 /* Pods-koverseIosApp.modulemap */,
+				F47F77B2F48CAB30549242A066ED2E26 /* Pods-koverseIosApp-acknowledgements.markdown */,
+				684FC77F0B8EAC362857A2BCFB1C31FA /* Pods-koverseIosApp-acknowledgements.plist */,
+				AEE3190FABE0BDDDCC72EFE5C26A8605 /* Pods-koverseIosApp-dummy.m */,
+				7BF8C922F7CCF98C0225FFD795F946AE /* Pods-koverseIosApp-frameworks.sh */,
+				20DFA5D2376C9C3ECB8CD385CAB40979 /* Pods-koverseIosApp-Info.plist */,
+				D0251501EC7157A03FA3DD684A08B125 /* Pods-koverseIosApp-umbrella.h */,
+				6BE1CCA431B3A3D1F5578AB963AFF258 /* Pods-koverseIosApp.debug.xcconfig */,
+				3A3BC8D3E092D5D50E27A140418C4BCA /* Pods-koverseIosApp.release.xcconfig */,
+			);
+			name = "Pods-koverseIosApp";
+			path = "Target Support Files/Pods-koverseIosApp";
+			sourceTree = "<group>";
+		};
+		834D386610834B1315B550181BF5802B /* KMPNativeCoroutinesCombine */ = {
+			isa = PBXGroup;
+			children = (
+				E437A0F98EE5C39E763BE8C6C0E10480 /* Future.swift */,
+				4AF10AFFEA986E5A9D440CBB8A87B30A /* FuturePublisher.swift */,
+				EA7CDA2CA96EF97EA94FBBCBC2CF6EF7 /* Publisher.swift */,
+				847B1A84276A6811F2761DDB9072E5AB /* Support Files */,
+			);
+			name = KMPNativeCoroutinesCombine;
+			path = KMPNativeCoroutinesCombine;
+			sourceTree = "<group>";
+		};
+		847B1A84276A6811F2761DDB9072E5AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62F43916CA7416F1997D3C53287F2ACF /* KMPNativeCoroutinesCombine.modulemap */,
+				5B28B6F5C9419D5D2587B4F29E1E86A4 /* KMPNativeCoroutinesCombine-dummy.m */,
+				D613872B081931555D13D5E4957A831C /* KMPNativeCoroutinesCombine-Info.plist */,
+				7C02E81A16895DE586AD4151F7B18EDA /* KMPNativeCoroutinesCombine-prefix.pch */,
+				B9F18C0529C504AD18B2384922631C04 /* KMPNativeCoroutinesCombine-umbrella.h */,
+				CD2D63D67C9998D95E5838E58C51F5D5 /* KMPNativeCoroutinesCombine.debug.xcconfig */,
+				EC550D5BDEDF9CC534426654FD82F6C5 /* KMPNativeCoroutinesCombine.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KMPNativeCoroutinesCombine";
+			sourceTree = "<group>";
+		};
+		A2D29A72057CE5DFC8E553E2D88C195D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7EE2B78A614C6C19416D9665F5344368 /* koverseShared.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A529B74A50E7812306BFCB1D29043D0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B0D9237621F8B88DE88C650C50F76A4 /* koverseShared.debug.xcconfig */,
+				B06DF7FC9F71AE2A800FD44A4540429E /* koverseShared.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../koverseIosApp/Pods/Target Support Files/koverseShared";
+			sourceTree = "<group>";
+		};
+		AA581D828EDF08531495EFA1CB2616BC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7375A81860FC8096B64A8F25B9DAFB77 /* Combine.framework */,
+				B1BFA29B7CF8EFCA97967A11AF007609 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AAC4E6B5AC4BFF058726C538F5AD758A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				089BE759B9A03C3A151D3327A2B90DAF /* koverseShared */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AAC4E6B5AC4BFF058726C538F5AD758A /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				67259BDD77EA86CFB823A3525C134493 /* Pods */,
+				36036B16A72816CDAEBDA32D6C0D631F /* Products */,
+				21C3D8EA95EACA61084A85626AF4C19F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE744FC83A0B0AA37C575EBF7A40C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				244186CCDDB11E6357E39462FB33501E /* koverseShared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB8A764B4C02D2143E6F368BA1511D67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				756750ECE9CC6E935D261177543ABEE6 /* KMPNativeCoroutinesCore.modulemap */,
+				752BB44AB556F0E4734498067083B877 /* KMPNativeCoroutinesCore-dummy.m */,
+				1B20864EEF00CFA29D7378B84A2BB667 /* KMPNativeCoroutinesCore-Info.plist */,
+				5910A87F7BB454EC38812399A4C20A00 /* KMPNativeCoroutinesCore-prefix.pch */,
+				24AF2F156649143C9DD958A23257D3FE /* KMPNativeCoroutinesCore-umbrella.h */,
+				1FDBDE3F31F17F52BBEE776AC45DE375 /* KMPNativeCoroutinesCore.debug.xcconfig */,
+				6FC46FC24E84E6826FA47DCA426499B5 /* KMPNativeCoroutinesCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KMPNativeCoroutinesCore";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15F0F4F2FB563FC3FE043F367ECEEA47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EBA5AD1A1EE63E4BD8DF4C42AEE00D /* KMPNativeCoroutinesCombine-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742BA3A513BCD7C3B43CB9C01DF60365 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA61DA3D7731491FBA3025163148764 /* KMPNativeCoroutinesAsync-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCB9BF835AC6F176F7BDA0DBCC3026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB2DF78D56F00DFCA0406650C61645 /* Pods-koverseIosApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F739BCBFFE2726CC1A4712D84A70AECE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FC264160CF6F2CF0A3B4F18E5D95F0 /* KMPNativeCoroutinesCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B64E56266DFE0A6F461C8B1A8BD8D86 /* Pods-koverseIosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841C0A7C4B7C81487E2D6C279703E7BC /* Build configuration list for PBXNativeTarget "Pods-koverseIosApp" */;
+			buildPhases = (
+				AFDCB9BF835AC6F176F7BDA0DBCC3026 /* Headers */,
+				ED2A8D36B9E27ED5C49CE90971447BAC /* Sources */,
+				302195670BFCB2B383D3F01C4E68A0CF /* Frameworks */,
+				A312BEB6837925C2EB38E9B6ADD7704C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520CDAE02B2C058250911F4052A61BFB /* PBXTargetDependency */,
+				7C584D72A0E964DC0E9EE51B1BBD2531 /* PBXTargetDependency */,
+				552314EB484D1B85E8F8A51274D2CCA6 /* PBXTargetDependency */,
+				B6942AF6FA5BDF7ABF6DD75CD8E77602 /* PBXTargetDependency */,
+			);
+			name = "Pods-koverseIosApp";
+			productName = Pods_koverseIosApp;
+			productReference = 470040553DF768BFE02DD4A9E58F2235 /* Pods-koverseIosApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F9FD9D97D14F53EE028871E5A26555A /* KMPNativeCoroutinesCombine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D38DEDFE5DA9572CC572755977654FC /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesCombine" */;
+			buildPhases = (
+				15F0F4F2FB563FC3FE043F367ECEEA47 /* Headers */,
+				75EBE8322F7BF192551736BC5C9BFCC4 /* Sources */,
+				53B0F7412DE79828E58616E995940FC1 /* Frameworks */,
+				FDC4F1CAE32DE67EA7476F1677F10F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE815CB44DD58DB9148F4B30040BFB6 /* PBXTargetDependency */,
+			);
+			name = KMPNativeCoroutinesCombine;
+			productName = KMPNativeCoroutinesCombine;
+			productReference = 1BC4A026DBC6C2982B828355463B2569 /* KMPNativeCoroutinesCombine */;
+			productType = "com.apple.product-type.framework";
+		};
+		F91BAFE2F1386309176711630BA5305A /* KMPNativeCoroutinesAsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB83A5F237CEA212FFE13EE6C40F270 /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesAsync" */;
+			buildPhases = (
+				742BA3A513BCD7C3B43CB9C01DF60365 /* Headers */,
+				CEBFC30DFC3E9A5A18AF608E23D03C61 /* Sources */,
+				304F365054DB28D79B1FC3C1673A3123 /* Frameworks */,
+				50C3992AAF25EEA6CB7777DF659A16A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47395574D748C14632A7A49F9EDB950D /* PBXTargetDependency */,
+			);
+			name = KMPNativeCoroutinesAsync;
+			productName = KMPNativeCoroutinesAsync;
+			productReference = CBB360F2822905300C310CBA06D6A093 /* KMPNativeCoroutinesAsync */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFFB6783B79B68DA14E36A00A348B0B3 /* KMPNativeCoroutinesCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45765BA14043702EC75E441C5D4BEC43 /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesCore" */;
+			buildPhases = (
+				F739BCBFFE2726CC1A4712D84A70AECE /* Headers */,
+				180CC0B401C6A478F7AFAA7DF758090B /* Sources */,
+				D5CBDDE6791DEA7CF38EE7F6D3D0D84F /* Frameworks */,
+				1526913C1C0983F50990F246825C77E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMPNativeCoroutinesCore;
+			productName = KMPNativeCoroutinesCore;
+			productReference = E32954243B605448566BC0C0B0BCF70D /* KMPNativeCoroutinesCore */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 36036B16A72816CDAEBDA32D6C0D631F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F91BAFE2F1386309176711630BA5305A /* KMPNativeCoroutinesAsync */,
+				3F9FD9D97D14F53EE028871E5A26555A /* KMPNativeCoroutinesCombine */,
+				FFFB6783B79B68DA14E36A00A348B0B3 /* KMPNativeCoroutinesCore */,
+				0F17405B146DB697BAA1AB988A90F9D3 /* koverseShared */,
+				0B64E56266DFE0A6F461C8B1A8BD8D86 /* Pods-koverseIosApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1526913C1C0983F50990F246825C77E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C3992AAF25EEA6CB7777DF659A16A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A312BEB6837925C2EB38E9B6ADD7704C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC4F1CAE32DE67EA7476F1677F10F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CC38755BF9BD948969C1D8E42F42B44 /* [CP-User] Build koverseShared */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build koverseShared";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180CC0B401C6A478F7AFAA7DF758090B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107215B4C6C7B6F0246E96B2F8C8CEDA /* KMPNativeCoroutinesCore-dummy.m in Sources */,
+				D5D811285CC80A9518E216C1926B05F6 /* NativeCallback.swift in Sources */,
+				25E5FD55377216C89C88751129556CF1 /* NativeCancellable.swift in Sources */,
+				16E27315771AA8ED41FD890D1DC3C579 /* NativeFlow.swift in Sources */,
+				B2582BD70B32BF93D7E40655AE3AA0A7 /* NativeSuspend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75EBE8322F7BF192551736BC5C9BFCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8601BFDE47F309C7F9349ECB3348806 /* Future.swift in Sources */,
+				B44D284319150453CF94EF541E516EAC /* FuturePublisher.swift in Sources */,
+				58542EAAE942FBA39067FE59ACF37B21 /* KMPNativeCoroutinesCombine-dummy.m in Sources */,
+				9727FAE66D46E1C0F349D593F4318E4F /* Publisher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBFC30DFC3E9A5A18AF608E23D03C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502360EC32D792B1C27BE5E9FE4D700A /* AsyncFunction.swift in Sources */,
+				1A7FDE2889389E8A23717C603A0F3B89 /* AsyncResult.swift in Sources */,
+				C0198A745D02F4ADBFEBAE8DAFD63DE6 /* AsyncSequence.swift in Sources */,
+				981211BFE5F9CC695F18BAA98D72F67B /* KMPNativeCoroutinesAsync-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2A8D36B9E27ED5C49CE90971447BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7734C0735648E7C7B8DFE4E4984DBE0 /* Pods-koverseIosApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47395574D748C14632A7A49F9EDB950D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPNativeCoroutinesCore;
+			target = FFFB6783B79B68DA14E36A00A348B0B3 /* KMPNativeCoroutinesCore */;
+			targetProxy = F7243E5D9CDC40F27D0882FB42EFCAFF /* PBXContainerItemProxy */;
+		};
+		520CDAE02B2C058250911F4052A61BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPNativeCoroutinesAsync;
+			target = F91BAFE2F1386309176711630BA5305A /* KMPNativeCoroutinesAsync */;
+			targetProxy = C73617CAC4694B32208EA96773B247EC /* PBXContainerItemProxy */;
+		};
+		552314EB484D1B85E8F8A51274D2CCA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPNativeCoroutinesCore;
+			target = FFFB6783B79B68DA14E36A00A348B0B3 /* KMPNativeCoroutinesCore */;
+			targetProxy = C53DEB8FFF94069518E4B1494AA0AA4D /* PBXContainerItemProxy */;
+		};
+		7C584D72A0E964DC0E9EE51B1BBD2531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPNativeCoroutinesCombine;
+			target = 3F9FD9D97D14F53EE028871E5A26555A /* KMPNativeCoroutinesCombine */;
+			targetProxy = 4B57ACC342B5BD7BC338C741C23B87B7 /* PBXContainerItemProxy */;
+		};
+		B6942AF6FA5BDF7ABF6DD75CD8E77602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = koverseShared;
+			target = 0F17405B146DB697BAA1AB988A90F9D3 /* koverseShared */;
+			targetProxy = EBC797AE932C48C46406EEF3D07098CA /* PBXContainerItemProxy */;
+		};
+		BAE815CB44DD58DB9148F4B30040BFB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPNativeCoroutinesCore;
+			target = FFFB6783B79B68DA14E36A00A348B0B3 /* KMPNativeCoroutinesCore */;
+			targetProxy = EA1D8199FC5A27E09F2E836E6B611721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A4567758F300D35B677314C0BDCCE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE1CCA431B3A3D1F5578AB963AFF258 /* Pods-koverseIosApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-koverseIosApp/Pods-koverseIosApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-koverseIosApp/Pods-koverseIosApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		155C8F3D218AF196340F78F0426124B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3BC8D3E092D5D50E27A140418C4BCA /* Pods-koverseIosApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-koverseIosApp/Pods-koverseIosApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-koverseIosApp/Pods-koverseIosApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44C5CFEF90823486EB5889B8533A8688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FDBDE3F31F17F52BBEE776AC45DE375 /* KMPNativeCoroutinesCore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesCore;
+				PRODUCT_NAME = KMPNativeCoroutinesCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45F9F2636E538657D7B07DCF88AD0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06DF7FC9F71AE2A800FD44A4540429E /* koverseShared.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63B4F65A9C7095DE085D8615317FC3A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC46FC24E84E6826FA47DCA426499B5 /* KMPNativeCoroutinesCore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesCore/KMPNativeCoroutinesCore.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesCore;
+				PRODUCT_NAME = KMPNativeCoroutinesCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8036B456C8D64F5F97C66E6FE53AFBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2D63D67C9998D95E5838E58C51F5D5 /* KMPNativeCoroutinesCombine.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesCombine;
+				PRODUCT_NAME = KMPNativeCoroutinesCombine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C7C1DD2BD459D366946863A81FC5773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A95B1859B1F1EF85DE72BFA535E6F71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0D9237621F8B88DE88C650C50F76A4 /* koverseShared.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE156151316D0AE22331070B006BBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC550D5BDEDF9CC534426654FD82F6C5 /* KMPNativeCoroutinesCombine.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesCombine/KMPNativeCoroutinesCombine.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesCombine;
+				PRODUCT_NAME = KMPNativeCoroutinesCombine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5A8A10C73A63CFC28E54D478C38EFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DDF8B612D335AB2C1599762B3B726B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCDB7C6C88F89A2E3D050FF00F0DA29 /* KMPNativeCoroutinesAsync.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesAsync;
+				PRODUCT_NAME = KMPNativeCoroutinesAsync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F16BF70327BB02D275CDE3F9A3BA3258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF6889255A593B98A79CBA8F7D6465D /* KMPNativeCoroutinesAsync.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KMPNativeCoroutinesAsync/KMPNativeCoroutinesAsync.modulemap";
+				PRODUCT_MODULE_NAME = KMPNativeCoroutinesAsync;
+				PRODUCT_NAME = KMPNativeCoroutinesAsync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45765BA14043702EC75E441C5D4BEC43 /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C5CFEF90823486EB5889B8533A8688 /* Debug */,
+				63B4F65A9C7095DE085D8615317FC3A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A8A10C73A63CFC28E54D478C38EFF3 /* Debug */,
+				9C7C1DD2BD459D366946863A81FC5773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB83A5F237CEA212FFE13EE6C40F270 /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesAsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16BF70327BB02D275CDE3F9A3BA3258 /* Debug */,
+				DDF8B612D335AB2C1599762B3B726B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D38DEDFE5DA9572CC572755977654FC /* Build configuration list for PBXNativeTarget "KMPNativeCoroutinesCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8036B456C8D64F5F97C66E6FE53AFBE9 /* Debug */,
+				ACE156151316D0AE22331070B006BBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841C0A7C4B7C81487E2D6C279703E7BC /* Build configuration list for PBXNativeTarget "Pods-koverseIosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4567758F300D35B677314C0BDCCE69 /* Debug */,
+				155C8F3D218AF196340F78F0426124B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C5E5493D7825EDFBF9146852AFA449 /* Build configuration list for PBXAggregateTarget "koverseShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95B1859B1F1EF85DE72BFA535E6F71C /* Debug */,
+				45F9F2636E538657D7B07DCF88AD0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
