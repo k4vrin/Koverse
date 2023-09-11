@@ -47,7 +47,10 @@ kotlin {
 
     sourceSets {
         all {
-            languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
+            languageSettings.apply {
+                optIn("com.russhwolf.settings.ExperimentalSettingsApi")
+                optIn("kotlin.experimental.ExperimentalObjCName")
+            }
         }
         val commonMain by getting {
             dependencies {
@@ -174,7 +177,7 @@ android {
 
 sqldelight {
     databases {
-        create("koverse-db") {
+        create("Koverse_db") {
             packageName.set("dev.kavrin.koverse.database")
         }
     }
