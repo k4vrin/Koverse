@@ -4,11 +4,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 
 interface UnidirectionalViewModel<STATE, EVENT, EFFECT> {
     val state: StateFlow<STATE>
-    val effect: Flow<EFFECT>
+    val effect: SharedFlow<EFFECT>
     fun onEvent(event: EVENT)
 }
 

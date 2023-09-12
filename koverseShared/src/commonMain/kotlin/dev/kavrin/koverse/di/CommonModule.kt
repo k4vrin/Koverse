@@ -41,7 +41,8 @@ private fun provideChatRepository(
     messageService: MessageService,
     chatSocketService: ChatSocketService,
 ): ChatRepository = ChatRepositoryImpl(
-    messageService = messageService
+    messageService = messageService,
+    chatSocketService = chatSocketService
 )
 
 

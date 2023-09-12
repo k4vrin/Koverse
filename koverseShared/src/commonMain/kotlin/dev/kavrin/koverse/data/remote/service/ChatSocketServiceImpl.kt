@@ -1,7 +1,9 @@
 package dev.kavrin.koverse.data.remote.service
 
 import dev.kavrin.koverse.data.remote.dto.MessageDto
-import dev.kavrin.koverse.domain.model.Message
+import dev.kavrin.koverse.domain.model.entity.Message
+import dev.kavrin.koverse.domain.model.error.SendMessageError
+import dev.kavrin.koverse.domain.model.error.StartChatSessionError
 import dev.kavrin.koverse.domain.util.Resource
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.websocket.webSocketSession
@@ -24,26 +26,27 @@ class ChatSocketServiceImpl(
 
     private var socket: WebSocketSession? = null
 
-    override suspend fun initSession(username: String): Resource<Unit, Unit> {
+    override suspend fun initSession(username: String): Resource<Unit, StartChatSessionError> {
         return try {
             socket = client.webSocketSession {
-                url(ChatSocketService.EndPoints.ChatSocket.url)
+                val urlWithParam = "${ChatSocketService.EndPoints.ChatSocket.url}?username=$username"
+                url(urlWithParam)
             }
             if (socket?.isActive == true) Resource.Success(Unit)
-            else Resource.Error(Unit, message = "Couldn't establish connection")
+            else Resource.Error(cause = StartChatSessionError.Unknown, message = "Couldn't establish connection")
         } catch (e: Exception) {
             e.printStackTrace()
-            Resource.Error(cause = Unit, message = e.message)
+            Resource.Error(cause = StartChatSessionError.Unknown, message = e.message)
         }
     }
 
-    override suspend fun sendMessage(message: String): Resource<Unit, Unit> {
+    override suspend fun sendMessage(message: String): Resource<Unit, SendMessageError> {
         return try {
             socket?.send(Frame.Text(message))
             Resource.Success(Unit)
         } catch (e: Exception) {
             e.printStackTrace()
-            Resource.Error(cause = Unit, message = e.message)
+            Resource.Error(cause = SendMessageError.Unknown, message = e.message)
         }
     }
 

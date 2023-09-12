@@ -1,6 +1,6 @@
 package dev.kavrin.koverse.data.remote.dto
 
-import dev.kavrin.koverse.domain.model.Message
+import dev.kavrin.koverse.domain.model.entity.Message
 import kotlinx.serialization.Serializable
 
 @Serializable

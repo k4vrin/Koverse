@@ -1,16 +1,15 @@
 package dev.kavrin.koverse.data.remote.service
 
-import dev.kavrin.koverse.domain.model.Message
+import dev.kavrin.koverse.domain.model.entity.Message
+import dev.kavrin.koverse.domain.model.error.SendMessageError
+import dev.kavrin.koverse.domain.model.error.StartChatSessionError
 import dev.kavrin.koverse.domain.util.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface ChatSocketService {
 
-    suspend fun initSession(
-        username: String
-    ): Resource<Unit, Unit>
-
-    suspend fun sendMessage(message: String) : Resource<Unit, Unit>
+    suspend fun initSession(username: String): Resource<Unit, StartChatSessionError>
+    suspend fun sendMessage(message: String) : Resource<Unit, SendMessageError>
 
     fun observeMessages(): Flow<Message>
 

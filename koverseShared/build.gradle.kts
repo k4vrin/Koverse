@@ -48,8 +48,9 @@ kotlin {
     sourceSets {
         all {
             languageSettings.apply {
-                optIn("com.russhwolf.settings.ExperimentalSettingsApi")
                 optIn("kotlin.experimental.ExperimentalObjCName")
+                optIn("com.russhwolf.settings.ExperimentalSettingsApi")
+                optIn("com.russhwolf.settings.ExperimentalSettingsImplementation")
             }
         }
         val commonMain by getting {

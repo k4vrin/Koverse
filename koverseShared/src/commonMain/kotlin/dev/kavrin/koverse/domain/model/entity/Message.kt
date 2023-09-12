@@ -1,4 +1,4 @@
-package dev.kavrin.koverse.domain.model
+package dev.kavrin.koverse.domain.model.entity
 
 data class Message(
     val text: String,
