@@ -1,5 +1,6 @@
 package dev.kavrin.koverse.data.util
 
+import co.touchlab.kermit.Logger
 import dev.kavrin.koverse.domain.util.ApiResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -18,9 +19,9 @@ suspend inline fun <reified T, reified E> HttpClient.safeRequest(
         val response = request { block() }
         ApiResponse.Success(response.body())
     } catch (e: ClientRequestException) {
-        ApiResponse.Error.HttpError(e.response.status.value, e.errorBody())
+        ApiResponse.Error.HttpClientError(e.response.status.value, e.errorBody())
     } catch (e: ServerResponseException) {
-        ApiResponse.Error.HttpError(e.response.status.value, e.errorBody())
+        ApiResponse.Error.HttpServerError(e.response.status.value, e.errorBody())
     } catch (e: IOException) {
         ApiResponse.Error.NetworkError
     } catch (e: SerializationException) {
@@ -31,5 +32,6 @@ suspend inline fun <reified E> ResponseException.errorBody(): E? =
     try {
         response.body()
     } catch (e: SerializationException) {
+        Logger.e(tag = "HttpClient", throwable = e) { "SerializationException: ${e.message}" }
         null
     }

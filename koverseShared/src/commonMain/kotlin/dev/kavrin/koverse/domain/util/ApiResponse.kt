@@ -8,9 +8,15 @@ sealed class ApiResponse<out SUCCESS, out ERROR> {
 
     sealed class Error<ERROR> : ApiResponse<Nothing, ERROR>() {
         /**
-         * Represents server (50x) and client (40x) errors.
+         * Represents client (40x) errors.
          */
-        data class HttpError<ERROR>(val code: Int, val errorBody: ERROR?) : Error<ERROR>()
+        data class HttpClientError<ERROR>(val code: Int, val errorBody: ERROR?) : Error<ERROR>()
+
+        /**
+         * Represents server (50x) errors.
+         */
+        data class HttpServerError<ERROR>(val code: Int, val errorBody: ERROR?) : Error<ERROR>()
+
 
         /**
          * Represent IOExceptions and connectivity issues.

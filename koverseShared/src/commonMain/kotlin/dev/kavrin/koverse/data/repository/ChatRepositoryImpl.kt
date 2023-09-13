@@ -20,7 +20,8 @@ class ChatRepositoryImpl(
     @NativeCoroutines
     override suspend fun getAllMessages(): Resource<List<Message>, GetAllMessagesError> {
         return when (val res = messageService.getAllMessages()) {
-            is ApiResponse.Error.HttpError -> Resource.Error(cause = GetAllMessagesError.ServerError, message = res.errorBody)
+            is ApiResponse.Error.HttpClientError -> Resource.Error(cause = GetAllMessagesError.AppError, message = res.errorBody)
+            is ApiResponse.Error.HttpServerError -> Resource.Error(cause = GetAllMessagesError.ServerError, message = res.errorBody)
             ApiResponse.Error.NetworkError -> Resource.Error(cause = GetAllMessagesError.BadInternet)
             ApiResponse.Error.SerializationError -> Resource.Error(cause = GetAllMessagesError.AppError, message = "Serialization Error")
             is ApiResponse.Success -> Resource.Success(data = res.body.map { it.toMessage() })
@@ -42,5 +43,6 @@ class ChatRepositoryImpl(
         return chatSocketService.sendMessage(message)
     }
 
+    @NativeCoroutines
     override fun observeMessages(): Flow<Message> = chatSocketService.observeMessages()
 }
