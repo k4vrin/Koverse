@@ -15,12 +15,12 @@ interface UnidirectionalViewModel<STATE, EVENT, EFFECT> {
 
 data class StateEffectDispatch<STATE, EVENT, EFFECT>(
     val state: STATE,
+    val dispatch: (EVENT) -> Unit,
     val effect: Flow<EFFECT>,
-    val dispatch: (EVENT) -> Unit
 )
 
 @Composable
-inline fun <reified STATE, EFFECT, EVENT> use(
+inline fun <reified STATE, EVENT, EFFECT> use(
     viewModel: UnidirectionalViewModel<STATE, EVENT, EFFECT>
 ): StateEffectDispatch<STATE, EVENT, EFFECT> {
 
@@ -32,7 +32,7 @@ inline fun <reified STATE, EFFECT, EVENT> use(
 
     return StateEffectDispatch(
         state = state,
-        effect = viewModel.effect,
-        dispatch = dispatch
+        dispatch = dispatch,
+        effect = viewModel.effect
     )
 }
