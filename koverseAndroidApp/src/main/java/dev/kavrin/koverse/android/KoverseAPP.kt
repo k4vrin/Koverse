@@ -1,4 +1,4 @@
-package dev.kavrin.koverse.android.presentation.theme
+package dev.kavrin.koverse.android
 
 import android.app.Application
 import android.app.NotificationChannel

@@ -22,13 +22,7 @@ class ChatViewModel(
     private val savedStateHandle: SavedStateHandle
 ) : ViewModel(), ChatContract {
 
-    init {
-        getAllMessages()
-        savedStateHandle.navArgs<ChatScreenNavArgs>().let {
-            _state.update { mState -> mState.copy(username = it.username) }
-            startChatSession(it.username)
-        }
-    }
+
 
     private val _state = MutableStateFlow(ChatContract.State())
     override val state: StateFlow<ChatContract.State> = _state.asStateFlow()
@@ -43,6 +37,8 @@ class ChatViewModel(
         when (event) {
             is ChatContract.Event.MessageChange -> _messageState.update { event.message }
             ChatContract.Event.SendMessage -> sendMessage()
+            ChatContract.Event.ConnectToChat -> connectToChat()
+            ChatContract.Event.StopChat -> disconnectChat()
         }
     }
 
@@ -57,6 +53,14 @@ class ChatViewModel(
             _messageState.value.takeIf { it.isNotBlank() }?.let { message ->
                 chatRepository.sendMessage(message)
             }
+        }
+    }
+
+    private fun connectToChat() {
+        getAllMessages()
+        savedStateHandle.navArgs<ChatScreenNavArgs>().let {
+            _state.update { mState -> mState.copy(username = it.username) }
+            startChatSession(it.username)
         }
     }
 

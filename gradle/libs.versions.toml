@@ -49,6 +49,8 @@ junit = "1.1.5"
 
 coil = "2.4.0"
 
+infoBarCompose = "1.0.0"
+
 [libraries]
 
 classpath-androidGradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
@@ -56,7 +58,7 @@ classpath-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-pl
 
 
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
-#ch-logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback"}
+#logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback"}
 
 ktor-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation-jvm" }
 ktor-core-jvm = { module = "io.ktor:ktor-server-core-jvm" }
@@ -126,6 +128,8 @@ compose-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 
 composeDest-core-animation = { module = "io.github.raamcosta.compose-destinations:animations-core", version.ref = "composeDestination" }
 composeDest-ksp = { module = "io.github.raamcosta.compose-destinations:ksp", version.ref = "composeDestination" }
+
+infoBarCompose = { module = "com.radusalagean:info-bar-compose", version.ref = "infoBarCompose"}
 
 coil-core = { module = "io.coil-kt:coil", version.ref = "coil" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }

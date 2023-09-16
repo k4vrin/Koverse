@@ -97,4 +97,7 @@ dependencies {
     // Compose Destinations
     implementation(libs.composeDest.core.animation)
     ksp(libs.composeDest.ksp)
+
+    // InfoBarCompose
+    implementation(libs.infoBarCompose)
 }
