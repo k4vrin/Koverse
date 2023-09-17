@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.radusalagean.infobarcompose.InfoBar
 import com.radusalagean.infobarcompose.InfoBarMessage
 import com.ramcosta.composedestinations.annotation.Destination
@@ -60,6 +61,7 @@ fun ChatScreen(
         ChatContent(
             state = state,
             event = event,
+            messageState = viewModel.messageState.collectAsStateWithLifecycle().value
         )
         InfoBar(
             modifier = Modifier

@@ -3,25 +3,28 @@ package dev.kavrin.koverse.android.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.material3.MaterialTheme
+import com.ramcosta.composedestinations.DestinationsNavHost
+import com.ramcosta.composedestinations.animations.rememberAnimatedNavHostEngine
+import dev.kavrin.koverse.android.presentation.screens.NavGraphs
 import dev.kavrin.koverse.android.presentation.theme.KoverseTheme
+import dev.kavrin.koverse.android.presentation.theme.TransitionAnimation
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val engine = rememberAnimatedNavHostEngine(
+                rootDefaultAnimations = TransitionAnimation.default
+            )
+            val navController = engine.rememberNavController()
             KoverseTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-
-                }
+                DestinationsNavHost(
+                    navGraph = NavGraphs.root,
+                    engine = engine,
+                    navController = navController
+                )
             }
         }
     }
