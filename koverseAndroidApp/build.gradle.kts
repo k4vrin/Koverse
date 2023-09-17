@@ -58,6 +58,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.majorVersion
+        freeCompilerArgs += listOf(
+            "-opt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
+            "-opt-in=androidx.compose.animation.ExperimentalAnimationApi",
+        )
     }
 }
 
@@ -97,4 +101,7 @@ dependencies {
     // Compose Destinations
     implementation(libs.composeDest.core.animation)
     ksp(libs.composeDest.ksp)
+
+    // InfoBarCompose
+    implementation(libs.infoBarCompose)
 }

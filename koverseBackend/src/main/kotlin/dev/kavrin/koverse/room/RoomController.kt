@@ -1,7 +1,7 @@
 package dev.kavrin.koverse.room
 
 import dev.kavrin.koverse.data.db.MessageDataSource
-import dev.kavrin.koverse.data.model.Message
+import dev.kavrin.koverse.data.remote.dto.MessageDto
 import io.ktor.websocket.*
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
@@ -26,13 +26,13 @@ class RoomController(
     }
 
     suspend fun sendMessage(senderUsername: String, message: String) = coroutineScope {
-        val messageEntity = Message(
+        val messageDtoEntity = MessageDto(
             text = message,
             userName = senderUsername,
             timestamp = System.currentTimeMillis()
         )
-        val insertJob = launch { messageDataSource.insertMessage(messageEntity) }
-        val parsedMessage = Json.encodeToString(messageEntity)
+        val insertJob = launch { messageDataSource.insertMessage(messageDtoEntity) }
+        val parsedMessage = Json.encodeToString(messageDtoEntity)
 
         members.values.forEach { member ->
             member.socket.send(Frame.Text(parsedMessage))
@@ -40,7 +40,7 @@ class RoomController(
         insertJob.join()
     }
 
-    suspend fun getAllMessages(): List<Message> {
+    suspend fun getAllMessages(): List<MessageDto> {
         return messageDataSource.getAllMessages()
     }
 

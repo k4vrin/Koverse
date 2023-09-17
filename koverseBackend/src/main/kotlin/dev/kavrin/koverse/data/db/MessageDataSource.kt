@@ -1,8 +1,8 @@
 package dev.kavrin.koverse.data.db
 
-import dev.kavrin.koverse.data.model.Message
+import dev.kavrin.koverse.data.remote.dto.MessageDto
 
 interface MessageDataSource {
-    suspend fun getAllMessages(): List<Message>
-    suspend fun insertMessage(message: Message)
+    suspend fun getAllMessages(): List<MessageDto>
+    suspend fun insertMessage(messageDto: MessageDto)
 }
