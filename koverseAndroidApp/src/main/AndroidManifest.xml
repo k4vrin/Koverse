@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:label="@string/app_name"
         android:name=".KoverseAPP"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".presentation.MainActivity"

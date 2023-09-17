@@ -30,6 +30,7 @@ val commonModule = module {
     single { provideHttpClient(engine = get()) }
     single { provideMessageService(client = get()) }
     single { provideChatSocketService(client = get()) }
+    single { provideChatRepository(messageService = get(), chatSocketService = get()) }
 
 }
 
